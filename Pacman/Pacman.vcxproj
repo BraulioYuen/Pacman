@@ -95,7 +95,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\braul\source\repos\Pacman\ExternalLibs\SDL2-2.0.8\lib\x86;C:\Users\braul\source\repos\Pacman\ExternalLibs\SDL2_ttf-2.0.14\lib\x86;C:\Users\braul\source\repos\Pacman\ExternalLibs\SDL2_image-2.0.3\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\braul\Pacman\ExternalLibs\SDL2-2.0.8;C:\Users\braul\Pacman\ExternalLibs\SDL2_ttf-2.0.14;C:\Users\braul\Pacman\ExternalLibs\SDL2_image-2.0.3;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2_image.lib;SDL2main.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -150,10 +150,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="KPlatform.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="KPlatform.cpp" />
     <ClCompile Include="Pacman.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
